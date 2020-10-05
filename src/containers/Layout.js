@@ -36,14 +36,15 @@ class CustomLayout extends React.Component {
               <React.Fragment>
                 <Menu.Menu position="right">
                   <Link to="/profile">
-                    <Menu.Item>Profile</Menu.Item>
+                    <Menu.Item>My Account</Menu.Item>
                   </Link>
                   <Dropdown
-                    icon="cart"
+                    icon="shopping cart"
                     loading={loading}
                     text={`${cart !== null ? cart.order_items.length : 0}`}
                     pointing
                     className="link item"
+
                   >
                     <Dropdown.Menu>
                       {cart !== null ? (
@@ -69,8 +70,8 @@ class CustomLayout extends React.Component {
                           />
                         </React.Fragment>
                       ) : (
-                        <Dropdown.Item>No items in your cart</Dropdown.Item>
-                      )}
+                          <Dropdown.Item>No items in your cart</Dropdown.Item>
+                        )}
                     </Dropdown.Menu>
                   </Dropdown>
                   <Menu.Item header onClick={() => this.props.logout()}>
@@ -79,15 +80,15 @@ class CustomLayout extends React.Component {
                 </Menu.Menu>
               </React.Fragment>
             ) : (
-              <Menu.Menu position="right">
-                <Link to="/login">
-                  <Menu.Item header>Login</Menu.Item>
-                </Link>
-                <Link to="/signup">
-                  <Menu.Item header>Signup</Menu.Item>
-                </Link>
-              </Menu.Menu>
-            )}
+                <Menu.Menu position="right">
+                  <Link to="/login">
+                    <Menu.Item header>Login</Menu.Item>
+                  </Link>
+                  <Link to="/signup">
+                    <Menu.Item header>Signup</Menu.Item>
+                  </Link>
+                </Menu.Menu>
+              )}
           </Container>
         </Menu>
 
