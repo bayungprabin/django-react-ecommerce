@@ -1,6 +1,6 @@
 # Django React Ecommerce
 
-[![alt text](https://github.com/justdjango/django-react-ecommerce/blob/master/thumbnail.png "Logo")](https://youtu.be/RG_Y7lIDXPM)
+
 
 This repository contains a Django and React ecommerce project. Among other functionality, users can create their account, add items to their cart and purchase those items using Stripe.
 
